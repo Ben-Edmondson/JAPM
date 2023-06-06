@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JAPM_Class_Library.Models
+namespace JAPM.ClassLibrary.Models
 {
     public class UsernameAndPassword : AppToSave
     {
