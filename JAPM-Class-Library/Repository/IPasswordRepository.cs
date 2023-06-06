@@ -12,7 +12,7 @@ namespace JAPM.ClassLibrary.Repository
         public UsernameAndPassword Create(string appName, string userName, string password);
         public List<UsernameAndPassword> ReadAll();
         public UsernameAndPassword Read(int id);
-        public bool Update(int id, string userName, string password);
+        public bool Update(int id,string appName, string userName, string password);
         public bool Delete(int id);
         
     }
