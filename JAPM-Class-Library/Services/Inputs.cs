@@ -1,4 +1,4 @@
-﻿namespace JAPM.ClassLibrary
+﻿namespace JAPM.ClassLibrary.Services
 {
     public class Inputs
     {
