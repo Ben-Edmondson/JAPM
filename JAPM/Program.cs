@@ -1,5 +1,8 @@
 ﻿using JAPM.ClassLibrary.Services;
+using JAPM_Class_Library.Repository;
+
 Inputs inputs = new Inputs();
+PasswordRepository passwordRepository = new PasswordRepository();
 Console.WriteLine("Welcome to JAPM");
 Console.WriteLine("Please select a function");
 Console.WriteLine
@@ -12,5 +15,26 @@ Console.WriteLine
 
 int selection = inputs.StringToIntParser();
 inputs.GetSelection(selection);
-Console.WriteLine(selection);
+switch (selection)
+{
+    case 1:
+        foreach(var account in passwordRepository.ReadAll())
+        {
+            Console.WriteLine($"Application: {account.Application}     Username/Email: {account.Username}        Password: {account.Password}");
+        }
+        break;
+    case 2:
+
+        break;
+    case 3:
+
+        break;
+    case 4:
+
+        break;
+    default:
+
+        break;
+}
+
 Console.ReadLine();
