@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JAPM-Class-Library\JAPM-Class-Library.csproj" />
+  </ItemGroup>
+
 </Project>
